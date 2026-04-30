@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job1.py
               run: python job1.py
     
@@ -18,7 +18,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job2.py
               run: python job2.py
 
@@ -26,7 +26,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job3.py
               run: python job3.py
     
@@ -34,7 +34,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job4.py
               run: python job4.py
                  
@@ -42,7 +42,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job5.py
               run: python job5.py
                  
@@ -50,6 +50,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: action/checkout@v2
+              uses: actions/checkout@v2
             - name: run job6.py
               run: python job6.py
