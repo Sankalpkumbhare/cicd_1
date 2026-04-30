@@ -16,6 +16,7 @@ jobs:
     
     job2-data:
         runs-on: ubuntu-latest
+        needs: job1-data
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -24,6 +25,7 @@ jobs:
 
     job3-data:
         runs-on: ubuntu-latest
+        needs: job1-data
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -32,6 +34,7 @@ jobs:
     
     job4-data:
         runs-on: ubuntu-latest
+        needs: job2-data
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -40,6 +43,7 @@ jobs:
                  
     job5-data:
         runs-on: ubuntu-latest
+        needs: job3-data
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
@@ -48,6 +52,7 @@ jobs:
                  
     job6-data:
         runs-on: ubuntu-latest
+        needs: [job4-data,job5-data]
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
